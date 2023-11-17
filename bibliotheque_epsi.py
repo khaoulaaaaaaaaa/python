@@ -37,7 +37,7 @@ class GestionLivresApp:   #Définit une classe GestionLivresApp pour encapsuler 
 
         if titre:
             self.c.execute("SELECT * FROM livres WHERE titre=?", (titre,))
-            livre = self.c.fetchone()
+            livre = self.c.fetchone() # récupérer tous les résultats d'une requête SELECT lorsqu'on interagit avec une base de données SQLite.
             #obtenir la première ligne résultante 
 
             if livre:
